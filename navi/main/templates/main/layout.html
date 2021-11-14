@@ -22,11 +22,9 @@
             <a href=""><li><i class="fas fa-address-book"></i>Контакты</li></a>
             <a href="{% url 'news_home' %}"><li><i class="fas fa-rss-square"></i>Новости</li></a>
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Добавить новость</button> </li></a>
+            <a href="{% url 'login' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Вход</button> </li></a>
+            <a href="{% url 'signup' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Регистрация</button> </li></a>
         </ul>
     </aside>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
 </body>
 </html>
